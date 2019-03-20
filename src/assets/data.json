@@ -1,0 +1,269 @@
+[
+  {
+    "name": "李四",
+    "scores": [
+      {
+        "time": "201801",
+        "total": "355",
+        "Math": "130",
+        "Chinese": "105",
+        "English": "120"
+      },
+      {
+        "time": "201802",
+        "total": "345",
+        "Math": "135",
+        "Chinese": "100",
+        "English": "110"
+      },
+      {
+        "time": "201803",
+        "total": "350",
+        "Math": "130",
+        "Chinese": "105",
+        "English": "115"
+      },
+      {
+        "time": "201804",
+        "total": "360",
+        "Math": "125",
+        "Chinese": "115",
+        "English": "120"
+      },
+      {
+        "time": "201805",
+        "total": "330",
+        "Math": "130",
+        "Chinese": "105",
+        "English": "120"
+      },
+      {
+        "time": "201806",
+        "total": "320",
+        "Math": "110",
+        "Chinese": "100",
+        "English": "120"
+      },
+      {
+        "time": "201807",
+        "total": "340",
+        "Math": "120",
+        "Chinese": "100",
+        "English": "120"
+      },
+      {
+        "time": "201808",
+        "total": "360",
+        "Math": "125",
+        "Chinese": "110",
+        "English": "125"
+      },
+      {
+        "time": "201809",
+        "total": "370",
+        "Math": "130",
+        "Chinese": "105",
+        "English": "125"
+      },
+      {
+        "time": "201810",
+        "total": "380",
+        "Math": "135",
+        "Chinese": "115",
+        "English": "130"
+      },
+      {
+        "time": "201811",
+        "total": "365",
+        "Math": "120",
+        "Chinese": "120",
+        "English": "125"
+      },
+      {
+        "time": "201812",
+        "total": "370",
+        "Math": "125",
+        "Chinese": "125",
+        "English": "120"
+      }
+    ]
+  },
+  {
+    "name": "张三",
+    "scores": [
+      {
+        "time": "201801",
+        "total": "355",
+        "Math": "130",
+        "Chinese": "105",
+        "English": "120"
+      },
+      {
+        "time": "201802",
+        "total": "345",
+        "Math": "135",
+        "Chinese": "100",
+        "English": "110"
+      },
+      {
+        "time": "201803",
+        "total": "350",
+        "Math": "130",
+        "Chinese": "105",
+        "English": "115"
+      },
+      {
+        "time": "201804",
+        "total": "360",
+        "Math": "125",
+        "Chinese": "115",
+        "English": "120"
+      },
+      {
+        "time": "201805",
+        "total": "330",
+        "Math": "130",
+        "Chinese": "105",
+        "English": "120"
+      },
+      {
+        "time": "201806",
+        "total": "320",
+        "Math": "110",
+        "Chinese": "100",
+        "English": "120"
+      },
+      {
+        "time": "201807",
+        "total": "340",
+        "Math": "120",
+        "Chinese": "100",
+        "English": "120"
+      },
+      {
+        "time": "201808",
+        "total": "360",
+        "Math": "125",
+        "Chinese": "110",
+        "English": "125"
+      },
+      {
+        "time": "201809",
+        "total": "370",
+        "Math": "130",
+        "Chinese": "105",
+        "English": "125"
+      },
+      {
+        "time": "201810",
+        "total": "380",
+        "Math": "135",
+        "Chinese": "115",
+        "English": "130"
+      },
+      {
+        "time": "201811",
+        "total": "365",
+        "Math": "120",
+        "Chinese": "120",
+        "English": "125"
+      },
+      {
+        "time": "201812",
+        "total": "370",
+        "Math": "125",
+        "Chinese": "125",
+        "English": "120"
+      }
+    ]
+  },
+  {
+    "name": "王五",
+    "scores": [
+      {
+        "time": "201801",
+        "total": "355",
+        "Math": "130",
+        "Chinese": "105",
+        "English": "120"
+      },
+      {
+        "time": "201802",
+        "total": "345",
+        "Math": "135",
+        "Chinese": "100",
+        "English": "110"
+      },
+      {
+        "time": "201803",
+        "total": "350",
+        "Math": "130",
+        "Chinese": "105",
+        "English": "115"
+      },
+      {
+        "time": "201804",
+        "total": "360",
+        "Math": "125",
+        "Chinese": "115",
+        "English": "120"
+      },
+      {
+        "time": "201805",
+        "total": "330",
+        "Math": "130",
+        "Chinese": "105",
+        "English": "120"
+      },
+      {
+        "time": "201806",
+        "total": "320",
+        "Math": "110",
+        "Chinese": "100",
+        "English": "120"
+      },
+      {
+        "time": "201807",
+        "total": "340",
+        "Math": "120",
+        "Chinese": "100",
+        "English": "120"
+      },
+      {
+        "time": "201808",
+        "total": "360",
+        "Math": "125",
+        "Chinese": "110",
+        "English": "125"
+      },
+      {
+        "time": "201809",
+        "total": "370",
+        "Math": "130",
+        "Chinese": "105",
+        "English": "125"
+      },
+      {
+        "time": "201810",
+        "total": "380",
+        "Math": "135",
+        "Chinese": "115",
+        "English": "130"
+      },
+      {
+        "time": "201811",
+        "total": "365",
+        "Math": "120",
+        "Chinese": "120",
+        "English": "125"
+      },
+      {
+        "time": "201812",
+        "total": "370",
+        "Math": "125",
+        "Chinese": "125",
+        "English": "120"
+      }
+    ]
+  }
+]

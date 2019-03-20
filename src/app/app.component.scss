@@ -1,0 +1,44 @@
+.main {
+	background-color: rgba(244, 246, 250, 1.0);
+	margin:0 auto;
+	width: 960px;
+}
+
+.title_section{
+	background: #099989;
+	border-radius: 0px;
+}
+
+.title_cell {
+    margin: 0 30px;
+    position: absolute;
+  	left: 5px;
+}
+.title_cell_right {
+    margin: 0 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f7f7f8;
+    text-align: left;
+    line-height: 40px;
+}
+
+.subtitle {
+    font-size: 18.0px;
+    color: #f7f7f8;
+    text-align: left;
+    line-height: 28.0px;
+}
+
+.date_picker{
+    margin: 5px;
+}
+
+.main_table{
+	padding: 0px;
+}

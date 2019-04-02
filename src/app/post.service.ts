@@ -9,6 +9,6 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   readData() {
-    return this.http('assets/data.json')
+    return this.http.get('assets/data.json')
   }
 }

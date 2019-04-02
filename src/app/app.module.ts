@@ -50,6 +50,7 @@ import { TableComponent } from './table/table.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatButtonModule,
     MatCardModule,
     MatMenuModule,

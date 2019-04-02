@@ -15,5 +15,6 @@ key point:
 
   - "ng-container" define column
   - "tr" define row
+  - asynchronously get data by HttpClient
   - "renderRows" refresh page
   

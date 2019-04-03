@@ -3,7 +3,7 @@
   <ng-container matColumnDef="expand">
     <th mat-header-cell class="cell_expand" *matHeaderCellDef></th>
     <td mat-cell *matCellDef="let element" class="cell_content" >
-      <span *ngIf="element['expand']">-</span>
+      <span *ngIf="element['expand'] && !element['parent']">-</span>
       <span *ngIf="!element['expand'] && !element['parent']">+</span>
     </td>
   </ng-container>

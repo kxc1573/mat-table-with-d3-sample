@@ -25,7 +25,8 @@ export class TableComponent implements OnInit {
     console.log(this.headers);
 
     post.readData()
-    .subscribe( res => {
+    .subscribe( resp => {
+        let res = JSON.parse(JSON.stringify(resp));         // fix "Type 'Object' is not an array type or a string type."
         for (let r of res) {
             let row = {'name': r['name']};
             for (let j = 0; j < this.dataHeader.length; j++) {

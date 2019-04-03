@@ -22,6 +22,8 @@ export class TableComponent implements OnInit {
 
   courses = ['Chinese', 'Math', 'English'];
   dataSource: any[] = [];
+  parentData: any[] = [];
+  childData: any[] = [];
   dataHeader: any[] = [];
   headers: string[] = ['expand', 'name'];
 
@@ -36,22 +38,22 @@ export class TableComponent implements OnInit {
     post.readData()
     .subscribe( resp => {
         let res = JSON.parse(JSON.stringify(resp));         // fix "Type 'Object' is not an array type or a string type."
-        console.log(res);
         for (let r of res) {
             let parentRow = {'expand': false, 'name': r['name']};
             for (let j = 0; j < this.dataHeader.length; j++) {
                 parentRow[this.dataHeader[j]] = r['scores'][j]['total'];
             }
-            this.dataSource.push(parentRow);
+            this.parentData.push(parentRow);
 
             for (let c of this.courses) {
                 let childRow = {'parent': r['name'], 'expand': false, 'name': c};
                 for (let j = 0; j < this.dataHeader.length; j++) {
                     childRow[this.dataHeader[j]] = r['scores'][j][c];
                 }
-                this.dataSource.push(childRow);
+                this.childData.push(childRow);
             }
         }
+        this.dataSource = JSON.parse(JSON.stringify(this.parentData));      // deep copy
         console.log(this.dataSource);
         this.table.renderRows();
     })
@@ -63,11 +65,13 @@ export class TableComponent implements OnInit {
   isParentRow = (index, item) => !item.hasOwnProperty('parent');
   isChildRow = (index, item) => item.hasOwnProperty('parent');
 
-  updateChildRow(i, item) {
-    for (let r of this.dataSource) {
-        if (r['parent'] == item['name']) {
-            r['expand'] = item['expand'];
-        }
+  updateChildExpand(i, item) {
+    if (item['expand']) {
+        let rows = this.childData.filter(r => r['parent'] == item['name']);
+        this.dataSource.splice(i + 1, 0, ...rows);                   // focus on the "splice"
+    } else {
+        let rows = this.dataSource.filter(r => r['parent'] !== item['name']);
+        this.dataSource = rows;
     }
     this.table.renderRows();
   }

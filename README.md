@@ -22,3 +22,11 @@ key point:
 
 expand child-row by animation
 implement child-row by native table
+
+
+#### 4.step3:
+
+expand child-row by updating dataSource
+
+
+

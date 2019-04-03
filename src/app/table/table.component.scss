@@ -1,5 +1,10 @@
+.cell_expand{
+  width:44px;
+  text-align: center;
+}
+
 .cell_name{
-  width:200px;
+  width:180px;
   text-align: center;
 }
 
@@ -12,3 +17,8 @@
   border-bottom-width: 0.5px;
   text-align: center;
 }
+
+tr.example-detail-row {
+  height: 0;
+}
+

@@ -32,4 +32,5 @@ expand child-row by updating dataSource
 #### 5.step4:
 
 expand child-row and draw detail-chart by d3 and animation
+
 bug: why the 'gia-chart-wrapper' don't exist?

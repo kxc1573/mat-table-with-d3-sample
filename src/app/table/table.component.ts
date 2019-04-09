@@ -121,12 +121,15 @@ export class TableComponent implements OnInit {
 
     console.log(selectorId);
 
-    var margin = { top: 40, right: 10, bottom: 40, left: 40 };
+    var margin = { top: 40, right: 24, bottom: 40, left: 40 };
 
     var widther = d3.select(selectorId).node().clientWidth;
 
     var width = widther - margin.left - margin.right,
       height = 360 - margin.top - margin.bottom;
+
+    //Parses date for hh:mm
+    var parseDate = d3.timeParse("%Y%m");
 
     //Appends the svg to the chart-container div
     var svg = d3.select(selectorId).append("svg")
@@ -147,12 +150,13 @@ export class TableComponent implements OnInit {
     var yAxis = d3.axisLeft(yScale)
       .tickSize([-width])
       .tickPadding([8])
-      .ticks([6]);
+      .ticks([15]);
 
     //Defines the x axis style
     var xAxis = d3.axisBottom(xScale)
       .tickPadding(8)
-      .ticks(6)
+      .ticks(12)
+      .tickFormat(d3.timeFormat("%Y%m"));
 
     //line graph functions
     var scoreline = d3.line()
@@ -161,12 +165,13 @@ export class TableComponent implements OnInit {
 
     // data format
     graphData.forEach(function(d) {
-      d.TIME = d.time;
       d.SCORE = +d[course];
+      d.TIME = parseDate(d.time);
     });
 
     //Find the max range of data
-    var maxY = d3.max(graphData, function(d) { return d.SCORE; });
+    //var maxY = d3.max(graphData, function(d) { return d.SCORE; });
+    var maxY = 150;
     var maxX = d3.max(graphData, function(d) { return d.TIME; });
     //Areas
     var indexes = d3.range(graphData.length);

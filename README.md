@@ -33,4 +33,8 @@ expand child-row by updating dataSource
 
 expand child-row and draw detail-chart by d3 and animation
 
-bug: why the 'gia-chart-wrapper' don't exist?
+- 1 bug: why the 'gia-chart-wrapper' don't exist?
+
+    need add "multiTemplateDataRows" property to mat-table
+
+- 2  "isChildRow" is needed for detail-graph-row

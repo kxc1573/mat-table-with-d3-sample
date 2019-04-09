@@ -1,4 +1,4 @@
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<table mat-table [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8">
   <!-- Expand Column -->
   <ng-container matColumnDef="expand">
     <th mat-header-cell class="cell_expand" *matHeaderCellDef></th>
@@ -44,7 +44,7 @@
       [class.example-expanded-row]="expandedElement === element"
       (click)="element['expand'] = !element['expand']; updateDetailGraph(element)">
   </tr>
-  <tr mat-row *matRowDef="let element; columns: ['expandedDetail'];"
+  <tr mat-row *matRowDef="let element; columns: ['expandedDetail']; when: isChildRow"
       class="example-detail-row">
   </tr>
 </table>

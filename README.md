@@ -5,9 +5,9 @@ A sample to implement table-tree by mat-table and dynamic drawing charts with d3
 ## foreword
 
 Recently, I got my first formal frontend task to implement a tree-table by mat-table and to draw chart of detail row by d3.
-The technologies involved include __Angular__, __Material__ table, __animation__ and __d3__, they were all new to me. 
-I quickly picked up these skills with examples that my colleagues have implemented and completed the task in time.
-But I have doubts about some details, so I implemented my demo from zero and recorded the process by different branches.
+The technologies involved included __Angular__, __Material__ table, __animation__ and __d3__, they were all new to me. 
+I quickly picked up these skills with examples had been implemented by my colleagues and then completed the task in time.
+But I still had doubts about some details, so I implemented my demo from zero and recorded the process by different branches.
 
 ## view different code on those branches
 #### 1.step0:

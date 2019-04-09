@@ -9,10 +9,10 @@
                 </mat-grid-tile>
                 <mat-grid-tile [colspan]="1" [rowspan]="1">
                     <div class="title_cell_right">
-                        <!--<span>Date:</span>-->
-                        <!--<input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="myDatepicker" placeholder="Choose a date" (dateChange)="changeDate($event)" [value]="localDate">-->
-                        <!--<mat-datepicker-toggle  matSuffix [for]="myDatepicker"></mat-datepicker-toggle>-->
-                        <!--<mat-datepicker #myDatepicker></mat-datepicker>-->
+                        <span style="margin: auto 0">Date:</span>
+                        <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="myDatepicker" placeholder="Choose a date" (dateChange)="changeDate($event)" [value]="localDate">
+                        <mat-datepicker-toggle  matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+                        <mat-datepicker #myDatepicker></mat-datepicker>
                     </div>
                 </mat-grid-tile>
                 <mat-grid-tile [colspan]="3" [rowspan]="1">

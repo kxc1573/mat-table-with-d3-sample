@@ -38,3 +38,7 @@ expand child-row and draw detail-chart by d3 and animation
     need add "multiTemplateDataRows" property to mat-table
 
 - 2  "isChildRow" is needed for detail-graph-row
+
+#### 6.step5
+
+add datepicker and set "prebuilt-themes" in styles.scss

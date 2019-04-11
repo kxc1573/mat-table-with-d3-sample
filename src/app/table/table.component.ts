@@ -76,6 +76,8 @@ export class TableComponent implements OnInit {
   isChildRow = (index, item) => item.hasOwnProperty('parent');
 
   updateChildExpand(i, item) {
+    this.collapseGraphs();
+
     //let parents = [...this.parentData];                          // deep copy
     let parents = JSON.parse(JSON.stringify(this.parentData));                          // deep copy
     if (item['expand']) {
